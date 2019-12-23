@@ -1,0 +1,19 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/results.css' %}">
+
+<h1>{{ question.question_text }}</h1>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <!--<li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li><!-->
+    <li><span class="perc-back" style="width: 100%"></span>
+        <input type="radio" name="answer" id="answer1" value="1">
+        <label for="answer">{{choice.choice_text}}</label>
+        <span class="perc-number">{{choice.votes}}</span>
+      </li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'polls:index' %}">К списку вопросов</a>
+<a href="{% url 'polls:detail' question.id %}">Проголосовать снова?</a>
