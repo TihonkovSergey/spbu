@@ -40,7 +40,7 @@ def vote(request, question_id):
         # Redisplay the question voting form.
         return render(request, 'polls/detail.html', {
             'question': question,
-            'error_message': "You didn't select a choice.",
+            'error_message': "Вы не выбрали ответ",
         })
     except:
         # Redisplay the question voting form.
@@ -58,7 +58,7 @@ def vote(request, question_id):
             params_to_admin = {
                 'question': question.question_text,
                 'choice':selected_choice.choice_text,
-                'name': 'Sergey'
+                'name': str(request.user.first_name + " " + request.user.last_name)
             }
             requests.post(url = URL, data=json.dumps(params_to_admin))
         # Always return an HttpResponseRedirect after successfully dealing

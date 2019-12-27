@@ -9,7 +9,7 @@ class ChoiceInline(admin.TabularInline):
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
         (None,               {'fields': ['question_text']}),
-        ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
+        ('Информация о дате', {'fields': ['pub_date'], 'classes': ['collapse']}),
         ('Хотите получать уведомление на почту?',               {'fields':['sub_to_not']}),
     ]
     inlines = [ChoiceInline]

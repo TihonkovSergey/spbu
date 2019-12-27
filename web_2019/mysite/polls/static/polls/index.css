@@ -2,28 +2,28 @@ body{ background-color: white;}
 
 li {
   display: block;
-  border: solid 1px #ddd;
+  border: solid 1px #5b92e5;
   padding: 14px;
   margin-bottom: 10px;
   position: relative;
 }
 li .perc-back {
-  background: #d2dfe5;
+  background: #66c5e2;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  width: var(w);
+  width: "100%";
   z-index: -1;
 }
 
 button {
-  background-color: #6BBE92;
+  background-color: #66c5e2;
   width: 302px;
   border: 0;
   padding: 10px 0;
   margin: 5px 0;
   text-align: center;
-  color: #fff;
+  color: #5b92e5;
   font-weight: bold;
 }

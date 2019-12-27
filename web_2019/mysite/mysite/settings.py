@@ -25,7 +25,7 @@ SECRET_KEY = 'op7the+4m&14sv8+2f-!q3ph=^!51aa#6*_g3_8v*9u7erj-_f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['814b7d92c3af49cd8e8c4fc424c9cb31.vfs.cloud9.us-east-1.amazonaws.com', 'bf03996c.ngrok.io', 'ec2-54-221-98-144.compute-1.amazonaws.com']
 
 
 # Application definition
@@ -142,4 +142,3 @@ AUTHENTICATION_BACKENDS = (
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/polls/'
-#LOGIN_REDIRECT_URL = '/'

@@ -1,6 +1,6 @@
 li {
     display: block;
-    border: solid 1px #ddd;
+    border: solid 1px #d2dfe5;
     padding: 14px;
     margin-bottom: 10px;
     position: relative;
@@ -11,60 +11,26 @@ li {
     top: 0;
     bottom: 0;
     left: 0;
-    width: var(w);
+    width: 100%;
     z-index: -1;
   }
+button {
+  float: right;
+  background: #007cb0;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0 30px;
+  font-size: 20px;
+  line-height: 40px;
+}
   
-  button {
-    float: right;
-    background: #007cb0;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
-    padding: 0 30px;
-    font-size: 20px;
-    line-height: 40px;
-  }
-  
-  label {
-    vertical-align: middle;
-    cursor: pointer;
-    line-height: 10px;
-    overflow: hidden;
-  }
-  label:before {
-    content: url("http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-radio-off.png");
-    overflow: hidden;
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 2px;
-    margin-left: 2px;
-    margin-bottom: -1px;
-  }
-  
-  input[type=radio]:checked + label:before {
-    content: url("http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-radio-on.png");
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: -3px;
-    margin-right: 8px;
-  }
-  
-  li.correct label:before {
-    content: url("http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-correct.png");
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: -5px;
-    margin-right: 6px;
-  }
-  
-  li.correct input[type=radio]:checked + label:before {
-    content: url("http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-correct.png");
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: -5px;
-    margin-right: 6px;
-  }
+label {
+  vertical-align: middle;
+  cursor: pointer;
+  line-height: 10px;
+  overflow: hidden;
+}
   
   .perc-number {
     float: right;
