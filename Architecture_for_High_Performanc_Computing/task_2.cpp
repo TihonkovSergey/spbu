@@ -85,6 +85,18 @@ int main() {
 
 	// compare results 
 	cout << "Is equal: " << is_equal(res_1, res_2, n, k) << "\n";
+	
+	// cleaning memory
+	for(int i = 0; i < m; i++)
+		delete a[i];
+
+	for (int i = 0; i > n; i++)
+		delete b[i];
+
+	for (int i = 0; i < m; i++) {
+		delete res_1[i];
+		delete res_2[i];
+	}
 
 	return 0;
 

@@ -65,5 +65,9 @@ int main() {
 	cout << "Multy thread res: " << res << "\n";
 	cout << "Multy thread time: " << chrono::duration_cast<chrono::microseconds>(end - start).count() << " ms\n";
 	
+	// cleaning memory
+	for(int i = 0; i < n; i++)
+		delete a[i];
+	
 	return 0;
 }
