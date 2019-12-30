@@ -9,14 +9,14 @@ dim_list = []
 for dim in lines_rows[0].split(" ")[:-1]:
     dim_list.append(dim)
 
-t_rows = PrettyTable(['num of threads \ dimention'] + dim_list)
+t_rows = PrettyTable(['num of threads \ dimension'] + dim_list)
 
 for line in lines_rows[1::]:
     t_rows.add_row(line.split())
 f_rows.close()
 
 # COLUMNS
-t_cols = PrettyTable(['num of threads \ dimention'] + dim_list)
+t_cols = PrettyTable(['num of threads \ dimension'] + dim_list)
 
 f_cols = open('output_columns.txt', "r")
 lines_cols = f_cols.readlines()
@@ -26,7 +26,7 @@ for line in lines_cols[1::]:
 f_cols.close()
 
 #BLOCKS
-t_blocks = PrettyTable(['num of threads \ dimention'] + dim_list)
+t_blocks = PrettyTable(['num of threads \ dimension'] + dim_list)
 
 f_blocks = open('output_blocks.txt', "r")
 lines_blocks = f_blocks.readlines()
@@ -44,16 +44,3 @@ print(t_cols)
 print()
 print("Разделение данных по блокам:")
 print(t_blocks)
-
-
-
-#plt.scatter(n_list, result, c='b') # рисуем точки из эксперимента синим
-#plt.scatter(n_list, real_logs, c='r') # рисуем точки реальных значений красным
-
-# оформление графика
-#plt.title('Зависимость количества итераций от размера массива')
-#plt.xlabel('размер массива')
-#plt.ylabel('среднее количество итераций')
-
-# вывод графика
-#plt.show()

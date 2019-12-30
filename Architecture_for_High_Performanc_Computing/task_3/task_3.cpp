@@ -90,7 +90,7 @@ int main() {
 		file_columns << threads_n << " ";
 		file_blocks << threads_n << " ";
 		for (int dim = 10; dim <= max_dim; dim *= 10){
-			cout << "Dimention: " << dim << endl;
+			cout << "Dimension: " << dim << endl;
 			int m = dim;
 			int n = dim;
 
