@@ -41,7 +41,7 @@ int main(){
 		cout << "Number of threads: " << threads << endl;
 		file_tapes << threads << " ";
 		for (int dim = 20; dim <= max_dim; dim *= 4) {
-			cout << "Dimention: " << dim << endl;
+			cout << "Dimension: " << dim << endl;
 
 			// fill random
 			int *a = new int[dim * dim];

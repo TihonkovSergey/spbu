@@ -56,7 +56,7 @@ int main() {
 		cout << "Number of threads: " << threads << endl;
 		file_blocks << threads << " ";
 		for (int dim = 20; dim <= max_dim; dim *= 4){
-			cout << "Dimention: " << dim << endl;
+			cout << "Dimension: " << dim << endl;
 			int m = dim;
 			int n = dim;
 			int k = dim;
